@@ -1,0 +1,137 @@
+.container{
+
+    align-items: center;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: calc(var(--bs-gutter-x)*.5);
+    padding-right: calc(var(--bs-gutter-x)*.5);
+    /* position: relative; */
+    /* z-index: auto; */
+    /* z-index: -9999 !important; */
+}
+.productCart 
+{
+    border: 1px solid #f5f5f9;
+    border-radius: 15px;
+    box-shadow: 0 2px 48px rgba(0,0,0,.06);
+    color: #000;
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+}
+.productCardCon{
+    position: relative;
+    flex: 0 0 auto;
+    width: 15.666667%;
+}
+.productCart img{
+    border-radius: 15px;
+    height: 150px;
+    object-fit: cover;
+    width: 100%;
+
+}
+.addTocart
+{
+    background-color: #f5f5f9;
+    border-radius: 6px;
+    bottom: 0;
+    height: 40px;
+    left: 50%;
+    position: absolute;
+    -webkit-transform: translate(-50%,50%);
+    transform: translate(-50%,50%);
+    transition: .5s;
+    width: 120px;
+}
+
+.addBtn{
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 6px;
+    box-shadow: -7px 5px 7px rgba(0,0,0,.1);
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    transition: .5s;
+    width: 40px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    z-index: 8;
+    cursor: pointer;
+}
+
+.count{
+    align-items: center;
+    color: #303030;
+    display: flex;
+    font-weight: Bold;
+    height: 40px;
+    justify-content: center;
+    left: 40px;
+    position: absolute;
+    top: 0;
+    transition: .5s;
+    -webkit-user-select: none;
+    user-select: none;
+    width: 40px;
+    z-index: 6;
+    
+}
+
+.removeBtn
+{
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 6px;
+    box-shadow: -7px 5px 7px rgba(0,0,0,.1);
+    display: inline-block;
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    transition: .5s;
+    width: 40px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    z-index: 7;
+}
+
+.discription{
+    margin-bottom: 30px;
+    padding-inline: 15px;
+}
+
+.cardTitle{
+    text-align: left;
+    font-size: 16px;
+}
+
+@media (min-width: 1400px){
+    .container{
+        max-width: 1320px;
+    }
+
+}
+@media (min-width: 767px) and (max-width: 1024px) {
+    .productCardCon{
+        position: relative;
+        flex: unset unset unset;
+        width: 27%;
+    }
+
+}
+@media (min-width: 375px) and (max-width: 750px) {
+    .productCardCon{
+        position: relative;
+        flex: unset unset unset;
+        width: 45%;
+    }
+
+}
